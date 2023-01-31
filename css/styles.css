@@ -1,6 +1,7 @@
 :root {
   --main-color: #2196f3;
   --secondary-color: #212121;
+  --background-color: #2f303a;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -11,7 +12,6 @@ a {
 }
 .header-contact {
   color: #757575;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -21,7 +21,6 @@ a {
   color: #757575;
 }
 nav {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -29,16 +28,21 @@ nav {
 }
 address {
   color: white;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.logo {
+.header-logo {
   color: #000000;
   font-family: "Raleway";
-  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+.footer-logo {
+  color: white;
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.15;
@@ -47,17 +51,20 @@ address {
 .logo-color {
   color: var(--main-color);
 }
-button:hover,
-button:focus,
 a:hover,
 a:focus {
   color: var(--main-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--main-color);
+  color: white;
 }
 button {
   cursor: pointer;
 }
 .main-title {
-  font-style: normal;
+  color: white;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -66,7 +73,6 @@ button {
   text-transform: uppercase;
 }
 dt {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -74,15 +80,12 @@ dt {
   text-transform: uppercase;
 }
 dd {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 .secondary-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -90,50 +93,47 @@ dd {
   letter-spacing: 0.03em;
 }
 .name {
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .occupation {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
 }
 .project-name {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .project-type {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
 }
 .main-button {
-  font-style: normal;
+  background-color: #2196f3;
+  color: white;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
 }
 .filter-button {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  background-color: #f5f4fa;
+  color: var(--secondary-color);
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.main-title-section,
+footer {
+  background-color: var(--background-color);
+}
+.team-section {
+  background-color: #f5f4fa;
 }
